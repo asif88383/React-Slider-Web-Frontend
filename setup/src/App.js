@@ -21,6 +21,12 @@ function App() {
           // more stuff coming up
 
           let position = 'nextSlide';
+          if (personIndex === index) {
+            position = 'activeSlide';
+          }
+          if (personIndex === index-1 || personIndex === 0) {
+            position = 'lastSlide';
+          }
           return (
             <article key={id} className={position} >
               <img src={image} alt={name} className='person-img' />
