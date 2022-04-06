@@ -20,8 +20,9 @@ function App() {
           console.log(person);
           // more stuff coming up
 
+          let position = 'nextSlide';
           return (
-            <article key={id}>
+            <article key={id} className={position} >
               <img src={image} alt={name} className='person-img' />
               <h4>{name}</h4>
               <p className='title'>{title}</p>
